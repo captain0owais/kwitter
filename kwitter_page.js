@@ -1,16 +1,19 @@
 //YOUR FIREBASE LINKS
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 var firebaseConfig = {
-      apiKey: "AIzaSyCu906z1gwu0EtJaGzYXqtSXaWn69u2p4E",
-      authDomain: "kwitter-b92e8.firebaseapp.com",
-      databaseURL: "https://kwitter-b92e8-default-rtdb.firebaseio.com",
-      projectId: "kwitter-b92e8",
-      storageBucket: "kwitter-b92e8.appspot.com",
-      messagingSenderId: "368667463803",
-      appId: "1:368667463803:web:a880d14ad06514fc8252de"
-    };
-    
-    // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+  apiKey: "AIzaSyBN8sGoiqqVnmc4F2XTVdcXIrwh6uYlAvw",
+  authDomain: "chat-c2948.firebaseapp.com",
+  databaseURL: "https://chat-c2948-default-rtdb.firebaseio.com",
+  projectId: "chat-c2948",
+  storageBucket: "chat-c2948.appspot.com",
+  messagingSenderId: "710863062218",
+  appId: "1:710863062218:web:9d2b635fad18daaa582033",
+  measurementId: "G-M3GKRZQDR6"
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig)
 
 var user_name=localStorage.getItem("user_name");
 var room_name=localStorage.getItem("room_name");
