@@ -99,3 +99,7 @@ background-image: linear-gradient(to right top, #33a0f1, #2591d9, #1882c1, #0a73
 {
 	margin-bottom: 20px;
 }
+
+#starter{
+	box-shadow: 1px 1px 50px white;
+}

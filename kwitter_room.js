@@ -33,7 +33,8 @@ function getData() {firebase.database().ref("/").on('value', function(snapshot) 
       row="<div id="+Room_names+" class='room_name' onClick='redirect_to_room_name(this.id)'>#"+Room_names+"</div>"
       document.getElementById("output").innerHTML+=row;
       //End code
-      });});}
+});});}
+
 getData();
 
 function redirect_to_room_name(name){
