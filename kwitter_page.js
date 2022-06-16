@@ -1,15 +1,15 @@
 //YOUR FIREBASE LINKS
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
 var firebaseConfig = {
-  apiKey: "AIzaSyBN8sGoiqqVnmc4F2XTVdcXIrwh6uYlAvw",
-  authDomain: "chat-c2948.firebaseapp.com",
-  databaseURL: "https://chat-c2948-default-rtdb.firebaseio.com",
-  projectId: "chat-c2948",
-  storageBucket: "chat-c2948.appspot.com",
-  messagingSenderId: "710863062218",
-  appId: "1:710863062218:web:9d2b635fad18daaa582033",
-  measurementId: "G-M3GKRZQDR6"
+  apiKey: "AIzaSyDeIe20R_uuBzBmFKDSnOt2NJoZLcjyiGo",
+  authDomain: "latest-kwitter-3868d.firebaseapp.com",
+  databaseURL: "https://latest-kwitter-3868d-default-rtdb.firebaseio.com",
+  projectId: "latest-kwitter-3868d",
+  storageBucket: "latest-kwitter-3868d.appspot.com",
+  messagingSenderId: "1025795340263",
+  appId: "1:1025795340263:web:bc3b7704d8b0d031206f42"
 };
 
 // Initialize Firebase
@@ -28,6 +28,7 @@ function send()
    });
 
   document.getElementById("msg").value = "";
+  
 }
 
 function getData() { firebase.database().ref("/"+room_name).on('value', function(snapshot) { document.getElementById("output").innerHTML = ""; snapshot.forEach(function(childSnapshot) { childKey  = childSnapshot.key; childData = childSnapshot.val(); if(childKey != "purpose") {
